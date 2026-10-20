@@ -23,6 +23,7 @@
         }
 
         /* Hero Header with background image adjustment */
+        /*
         header {
             position: relative;
             background: linear-gradient(rgba(15, 15, 17, 0.6), rgba(15, 15, 17, 0.85)), url('/images/header-exploratori-digitali.png') no-repeat center center/cover;
@@ -50,6 +51,22 @@
             margin: 1rem 0 0 0;
             font-weight: 400;
             color: #FFFFFF;
+        }
+        */
+         /* Clean Header for a solid banner image */
+        header {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            background: none;
+            display: block;
+        }
+
+        header img {
+            width: 100%;
+            height: auto;
+            display: block;
+            opacity: 1; /* 100% opacity with no dark overlays */
         }
 
         /* Layout Architecture */
@@ -200,10 +217,12 @@
 <body>
 
     <!-- Header section with the image requested -->
+    <!--
     <header>
         <h1>Exploratori Digitali</h1>
         <div class="subtitle">Calculatorul, Internetul, Programarea și Robotica</div>
     </header>
+    -->
 
     <main>
         <!-- Section 1: Overview -->
