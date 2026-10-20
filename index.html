@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploratori Digitali - Curs de Programare și Robotică pentru Copii</title>
+    <style>
+        :root {
+            --billboard-yellow: #FFD100;
+            --billboard-black: #0F0F11;
+            --light-bg: #F9FAFB;
+            --text-color: #2D3748;
+            --card-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-bg);
+            color: var(--text-color);
+            line-height: 1.7;
+        }
+
+        /* Hero Header with background image adjustment */
+        header {
+            position: relative;
+            background: linear-gradient(rgba(15, 15, 17, 0.6), rgba(15, 15, 17, 0.85)), url('header.png') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 8rem 2rem;
+            min-height: 40vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            color: var(--billboard-yellow);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+
+        header .subtitle {
+            font-size: 1.6rem;
+            margin: 1rem 0 0 0;
+            font-weight: 400;
+            color: #FFFFFF;
+        }
+
+        /* Layout Architecture */
+        main {
+            max-width: 1100px;
+            margin: -4rem auto 4rem auto;
+            padding: 0 2rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        .section-card {
+            background: white;
+            padding: 3rem;
+            border-radius: 16px;
+            box-shadow: var(--card-shadow);
+            margin-bottom: 2.5rem;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            color: var(--billboard-black);
+            font-size: 2rem;
+            margin-top: 0;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 60px;
+            height: 4px;
+            background-color: var(--billboard-yellow);
+            border-radius: 2px;
+        }
+
+        /* Equal Height Two-Column Row */
+        .flex-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            align-items: stretch; /* Forces equal height columns */
+        }
+
+        .flex-col {
+            flex: 1;
+            min-width: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .image-col {
+            background-size: cover;
+            background-position: center;
+            border-radius: 12px;
+            min-height: 350px;
+        }
+
+        /* Explicitly adding sample decorative images via unsplash for coding context */
+        .img-course {
+            background-image: url('https://unsplash.com');
+        }
+
+        .img-teachers {
+            background-image: url('https://unsplash.com');
+        }
+
+        /* Buttons Styling requested by user */
+        .cta-button {
+            display: inline-block;
+            background-color: var(--billboard-black);
+            color: var(--billboard-yellow);
+            border: 2px solid var(--billboard-black);
+            padding: 1rem 2.5rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            text-align: center;
+        }
+
+        .cta-button:hover {
+            background-color: var(--billboard-yellow);
+            color: var(--billboard-black);
+            border-color: var(--billboard-yellow);
+        }
+
+        /* Embedded Form Container */
+        .form-container {
+            width: 100%;
+            overflow: hidden;
+            border-radius: 12px;
+            border: 1px solid #E2E8F0;
+        }
+
+        iframe {
+            width: 100%;
+            height: 1100px;
+            border: none;
+            display: block;
+        }
+
+        /* Footer Architecture */
+        footer {
+            background-color: var(--billboard-black);
+            color: #A0AEC0;
+            padding: 3rem 2rem;
+            text-align: center;
+            font-size: 1rem;
+            border-top: 5px solid var(--billboard-yellow);
+        }
+
+        footer .contacts {
+            margin-bottom: 1.5rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        footer .contacts a {
+            color: var(--billboard-yellow);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        footer .contacts a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 768px) {
+            header h1 { font-size: 2.2rem; }
+            header .subtitle { font-size: 1.2rem; }
+            .section-card { padding: 1.8rem; }
+            footer .contacts { flex-direction: column; gap: 0.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header section with the image requested -->
+    <header>
+        <h1>Exploratori Digitali</h1>
+        <div class="subtitle">Calculatorul, Internetul, Programarea și Robotica</div>
+    </header>
+
+    <main>
+        <!-- Section 1: Overview -->
+        <section class="section-card">
+            <h2>Despre Curs</h2>
+            <p>Este un curs practic pentru copii de 7–11 ani, în care aceștia învață să folosească tehnologia cu încredere, creativitate și responsabilitate.</p>
+            <p>Copiii descoperă cum funcționează calculatorul, cum își organizează fișierele și proiectele, cum folosesc tastatura și aplicațiile corect, dar și cum navighează mai sigur și mai echilibrat pe internet. Prin Scratch, ei creează animații, jocuri și povești interactive, învățând noțiuni de programare precum algoritmi, bucle, condiții, variabile, mesaje între personaje și rezolvarea erorilor.</p>
+            <p>În partea de robotică, copiii fac primii pași în asamblarea și programarea roboților, înțelegând cum instrucțiunile, senzorii și codul pot transforma o idee într o mișcare reală.</p>
+            <div style="margin-top: 2rem; text-align: center;">
+                <a href="#inscriere" class="cta-button">Înscrie-te Acum</a>
+            </div>
+        </section>
+
+        <!-- Section 2: How it works (Equal Height Columns) -->
+        <section class="section-card">
+            <div class="flex-row">
+                <div class="flex-col image-col img-course"></div>
+                <div class="flex-col">
+                    <h2>Cum se desfășoară cursul</h2>
+                    <p>Fiecare întâlnire este practică, structurată și adaptată ritmului copiilor de 7–11 ani. Explicațiile sunt scurte și clare, urmate de demonstrații, provocări la calculator, lucru individual sau în perechi și momente de prezentare a proiectelor.</p>
+                    <p>Nu evaluăm viteza sau cât de „perfect” arată un proiect. Încurajăm curiozitatea, încercarea, perseverența, organizarea și capacitatea copilului de a explica ce a creat.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: About Teachers (Equal Height Columns) -->
+        <section class="section-card">
+            <div class="flex-row" style="flex-direction: row-reverse; flex-wrap: wrap-reverse;">
+                <div class="flex-col image-col img-teachers"></div>
+                <div class="flex-col">
+                    <h2>Despre profesori</h2>
+                    <p>Cursul este susținut de profesori cu experiență vastă în programare și dezvoltare software, care au devenit părinți și astfel înțeleg atât partea tehnică a tehnologiei, cât și provocările educației copiilor într-o lume tot mai digitalizată.</p>
+                    <p>Profesorii nu predau doar cod sau comenzi. Ei îi ghidează pe copii să folosească tehnologia cu sens: să creeze, nu doar să consume; să gândească înainte de a acționa; să își protejeze datele; să comunice respectuos și să păstreze un echilibru sănătos între timpul online și viața de zi cu zi.</p>
+                    <p>Într-o perioadă în care ecranele ocupă tot mai mult loc în viața copiilor, „Exploratori Digitali” oferă un cadrul sigur și constructiv. Copiii învață că tehnologia poate fi un instrument pentru imaginație, învățare, colaborare și rezolvarea problemelor.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Message for Parents -->
+        <section class="section-card">
+            <h2>Mesaj pentru părinți</h2>
+            <p><b>Exploratori Digitali</b> nu este doar un curs de calculator. Este un program de educație digitală, programare și robotică, conceput pentru a le oferi copiilor competențe reale pentru prezent și viitor.</p>
+            <p>La final, copiii vor putea să folosească mai organizat calculatorul, să creeze proiecte simple în Scratch, să înțeleagă idei de bază din programare și robotică, să navigheze mai responsabil pe internet și să privească tehnologia nu doar ca pe un loc de consum, ci ca pe un spațiu în care pot construi propriile idei.</p>
+        </section>
+
+        <!-- Section 5: Registration Google Form Embedded -->
